@@ -1,0 +1,26 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Chat Room</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<div class="messages">
+		<span class="username">{{ username }}</span>
+		<span class="message">{{ message }}</span>
+	</div>
+</ion-content>
+<ion-footer #footer>
+  <ion-toolbar>
+    <div class="innerMessage">
+    	<ion-input type="text" [(ngModel)]="message"></ion-input>
+    	<button ion-button icon-only primary>
+    		 <ion-icon ios="ios-send" md="md-send"></ion-icon>
+    	</button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

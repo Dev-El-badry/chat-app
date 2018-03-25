@@ -1,0 +1,7 @@
+fire.auth.onAuthStateChanged(function (user) { 
+
+if(!user) {
+navCtrl.setRoot(homePage);
+}
+
+})
